@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Searchfight.Services.SearchEngine
+namespace Searchfight.Services
 {
     public class Service
     {
