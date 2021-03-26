@@ -11,19 +11,19 @@ namespace Searchfight.Services
     {
         public static class WebRequest
         {
-            public const string USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36";
+            public static string USER_AGENT = GetFromConfiguration("UserAgent");
 
 
             public static int TIMEOUT = Convert.ToInt32(GetFromConfiguration("Timeout"));
 
             public static class Api
             {
-                public const string CONTENT_TYPE = "application/json";
+                public static string CONTENT_TYPE = GetFromConfiguration("ContentTypeApi");
             }
 
             public static class Default
             {
-                public const string CONTENT_TYPE = "application/x-www-form-urlencoded";
+                public static string CONTENT_TYPE = GetFromConfiguration("ContentTypeDefault");
             }
         }
 
