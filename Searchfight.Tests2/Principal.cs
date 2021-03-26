@@ -7,7 +7,7 @@ using Searchfight.Utils.Helper;
 using System;
 using System.Threading.Tasks;
 
-namespace Searchfight.Tests
+namespace Searchfight.Tests2
 {
     public class Principal
     {

@@ -11,19 +11,21 @@ namespace Searchfight.Services
     {
         public static class WebRequest
         {
-            public static string USER_AGENT = GetFromConfiguration("UserAgent");
+          //   public static string USER_AGENT = GetFromConfiguration("UserAgent");//Cuando se desarrolla o deploya descomentar
 
-
-            public static int TIMEOUT = Convert.ToInt32(GetFromConfiguration("Timeout"));
-
+           public const string USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36";//Para pruebas unitarias
+           //   public static int TIMEOUT = Convert.ToInt32(GetFromConfiguration("Timeout"));//Cuando se desarrolla o deploya descomentar
+            public const int TIMEOUT = 10000;//Para pruebas
             public static class Api
             {
-                public static string CONTENT_TYPE = GetFromConfiguration("ContentTypeApi");
+                //  public static string CONTENT_TYPE = GetFromConfiguration("ContentTypeApi");//Cuando se desarrolla o deploya descomentar
+                public const string CONTENT_TYPE = "application/json";
             }
 
             public static class Default
             {
-                public static string CONTENT_TYPE = GetFromConfiguration("ContentTypeDefault");
+                // public static string CONTENT_TYPE = GetFromConfiguration("ContentTypeDefault");//Cuando se desarrolla o deploya descomentar
+                public const string CONTENT_TYPE = "application/x-www-form-urlencoded";
             }
         }
 
@@ -44,7 +46,8 @@ namespace Searchfight.Services
                 {
                     public static class SearchEngine
                     {
-                        public static string SEARCH = GetFromConfiguration("Bing.BaseUrl");
+                        //  public static string SEARCH = GetFromConfiguration("Bing.BaseUrl");//Cuando se desarrolla o deploya descomentar
+                        public const string SEARCH = "https://www.bing.com/search";
                     }
                 }
             }
@@ -72,7 +75,8 @@ namespace Searchfight.Services
                 {
                     public static class SearchEngine
                     {
-                        public static string SEARCH = GetFromConfiguration("Google.BaseUrl");
+                        //   public static string SEARCH = GetFromConfiguration("Google.BaseUrl");//Cuando se desarrolla o deploya descomentar
+                        public const string SEARCH = "https://www.google.com/search";
                     }
                 }
             }
@@ -92,7 +96,8 @@ namespace Searchfight.Services
                 {
                     public static class SearchEngine
                     {
-                        public static  string SEARCH = GetFromConfiguration("Yahoo.BaseUrl");
+                        // public static  string SEARCH = GetFromConfiguration("Yahoo.BaseUrl");//Cuando se desarrolla o deploya descomentar
+                        public const string SEARCH = "https://search.yahoo.com/search";
                     }
                 }
             }

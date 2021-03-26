@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Searchfight.Services", "Sea
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Searchfight.Utils", "Searchfight.Utils\Searchfight.Utils.csproj", "{26DDD710-8D8F-41D5-A5EF-99B2353BCBD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Searchfight.Tests", "Searchfight.Tests\Searchfight.Tests.csproj", "{08A02F89-CB72-49A4-850B-CF2FDB8F316C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Searchfight.Tests", "Searchfight.Tests\Searchfight.Tests.csproj", "{08A02F89-CB72-49A4-850B-CF2FDB8F316C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
